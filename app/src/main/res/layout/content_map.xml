@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        tools:showIn="@layout/app_bar_map"
+        tools:context=".MapActivity">
+
+    <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:name="com.here.android.mpa.mapping.MapFragment"
+            android:id="@+id/fragment"/>
+    <TextView
+            android:text="Log"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/log_text" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/background"
+            android:id="@+id/hints"/>
+</android.support.constraint.ConstraintLayout>
